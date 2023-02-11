@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.formErrorMessage {
+  color: #af0c48;
+  font-size: 0.75rem;
+  font-family: "Inter", sans-serif;
+}
