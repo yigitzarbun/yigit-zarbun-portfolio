@@ -127,10 +127,13 @@ function Profile() {
         <StyledAboutMeContainer>
           <StyledProfileSubTitle>About Me</StyledProfileSubTitle>
           <StyledProfileText>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
-            aut, odit laborum aliquam voluptatum nisi mollitia. Mnima accusamus
-            ratione soluta aperiam sit voluptate? Dicta quod deserunt quam
-            temporibus cumque magnam!{" "}
+            After studying International Relations, International Business and
+            Energy Technologies in the United Kingdom for over 6 years and
+            working at export, business development and strategy positions, I
+            decided to embark on a new career path towards web-development. I
+            enjoy developing functional products and solving problems. I'm
+            looking for projects and teams to collaborate with on creative
+            projects.
           </StyledProfileText>
         </StyledAboutMeContainer>
       </StyledProfileTextsContainer>

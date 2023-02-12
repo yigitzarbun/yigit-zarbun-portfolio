@@ -71,15 +71,14 @@ function Skills() {
         <StyledSkillContainer>
           <StyledSkillTitle>Javascript</StyledSkillTitle>
           <StyledSkillsText>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
+            Having started my development journey with Javascript (JS) and its
+            libraries, I create most of my products by using JS.
           </StyledSkillsText>
         </StyledSkillContainer>
         <StyledSkillContainer>
           <StyledSkillTitle>React.Js</StyledSkillTitle>
           <StyledSkillsText>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
+            I have been developing solid front-end projects with React.
           </StyledSkillsText>
         </StyledSkillContainer>
         <StyledSkillContainer>

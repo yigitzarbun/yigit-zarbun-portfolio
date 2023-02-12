@@ -25,7 +25,9 @@ const StyledProjectsTitle = styled.h2`
 const StyledProjectsOuterContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  column-gap: 5vw;
   justify-content: space-between;
+  align-items: flex-end;
   @media (max-width: 1000px) {
     flex-direction: column;
     align-items: center;
@@ -36,12 +38,13 @@ const StyledProjectsOuterContainer = styled.div`
 const StyledProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 27%;
+  width: 28%;
   row-gap: 3vh;
   @media (max-width: 1000px) {
     width: 70%;
     align-items: center;
     row-gap: 5vh;
+    margin: 0 auto;
   }
   @media (max-width: 450px) {
     row-gap: 2vh;
@@ -113,8 +116,8 @@ function Projects() {
       <StyledProjectsTitle>Projects</StyledProjectsTitle>
       <StyledProjectsOuterContainer>
         <StyledProjectContainer>
-          <StyledProjectImg src="https://picsum.photos/300/180" />
-          <StyledProjectTitle>Project 1</StyledProjectTitle>
+          <StyledProjectImg src="./images/fav-movies.png" />
+          <StyledProjectTitle>Favourite Movies</StyledProjectTitle>
           <StyledSkillsText>
             A simple, customizable, minimal setup cookie plugin that allows your
             users to select which cookies to accept or decline. This was created
@@ -128,13 +131,20 @@ function Projects() {
             <StyledLanguage>axios</StyledLanguage>
           </StyledLanguagesContainer>
           <StyledLinkContainer>
-            <StyledLink>Github</StyledLink>
-            <StyledLink>View Site</StyledLink>
+            <StyledLink href="https://github.com/yigitzarbun/fsweb-s10g3-redux-watchlist">
+              Github
+            </StyledLink>
+            <StyledLink
+              href="https://fsweb-s10g3-redux-watchlist-kh1ced2d3-yigitzarbun.vercel.app/"
+              target="_blank"
+            >
+              View Site
+            </StyledLink>
           </StyledLinkContainer>
         </StyledProjectContainer>
         <StyledProjectContainer>
-          <StyledProjectImg src="https://picsum.photos/300/180" />
-          <StyledProjectTitle>Project 2</StyledProjectTitle>
+          <StyledProjectImg src="./images/shopping-cart.png" />
+          <StyledProjectTitle>Shopping Cart</StyledProjectTitle>
           <StyledSkillsText>
             A simple, customizable, minimal setup cookie plugin that allows your
             users to select which cookies to accept or decline. This was created
@@ -148,13 +158,23 @@ function Projects() {
             <StyledLanguage>axios</StyledLanguage>
           </StyledLanguagesContainer>
           <StyledLinkContainer>
-            <StyledLink>Github</StyledLink>
-            <StyledLink>View Site</StyledLink>
+            <StyledLink
+              href="https://github.com/yigitzarbun/fsweb-s11g1-shopping-cart"
+              target="_blank"
+            >
+              Github
+            </StyledLink>
+            <StyledLink
+              href="https://fsweb-s11g1-shopping-cart.vercel.app/"
+              target="_blank"
+            >
+              View Site
+            </StyledLink>
           </StyledLinkContainer>
         </StyledProjectContainer>
         <StyledProjectContainer>
-          <StyledProjectImg src="https://picsum.photos/300/180" />
-          <StyledProjectTitle>Project 3</StyledProjectTitle>
+          <StyledProjectImg src="./images/movie-db.png" />
+          <StyledProjectTitle>IMDB Movies</StyledProjectTitle>
           <StyledSkillsText>
             A simple, customizable, minimal setup cookie plugin that allows your
             users to select which cookies to accept or decline. This was created
@@ -168,8 +188,15 @@ function Projects() {
             <StyledLanguage>axios</StyledLanguage>
           </StyledLanguagesContainer>
           <StyledLinkContainer>
-            <StyledLink>Github</StyledLink>
-            <StyledLink>View Site</StyledLink>
+            <StyledLink href="https://github.com/yigitzarbun/fsweb-s10g2-redux-filmler">
+              Github
+            </StyledLink>
+            <StyledLink
+              href="https://fsweb-s10g2-redux-filmler-olive.vercel.app/movies"
+              target="_blank"
+            >
+              View Site
+            </StyledLink>
           </StyledLinkContainer>
         </StyledProjectContainer>
       </StyledProjectsOuterContainer>
