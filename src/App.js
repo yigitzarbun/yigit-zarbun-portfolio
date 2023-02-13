@@ -22,7 +22,6 @@ function App() {
     toast("Thank you for your message!");
   };
 
-  console.log(theme);
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
@@ -32,7 +31,7 @@ function App() {
       <Skills />
       <Profile />
       <Projects />
-      <Footer formSuccess={formSuccess} />
+      <Footer formSuccess={formSuccess} theme={theme} />
     </ThemeProvider>
   );
 }

@@ -71,21 +71,22 @@ function Skills() {
         <StyledSkillContainer>
           <StyledSkillTitle>Javascript</StyledSkillTitle>
           <StyledSkillsText>
-            Having started my development journey with Javascript (JS) and its
-            libraries, I create most of my products by using JS.
+            Having started my development journey with Javascript (JS), I build
+            most of my projects by using JS and relevant libraries.
           </StyledSkillsText>
         </StyledSkillContainer>
         <StyledSkillContainer>
-          <StyledSkillTitle>React.Js</StyledSkillTitle>
+          <StyledSkillTitle>React</StyledSkillTitle>
           <StyledSkillsText>
-            I have been developing solid front-end projects with React.
+            React has been my number one choice of library for building
+            interactive front-end products.
           </StyledSkillsText>
         </StyledSkillContainer>
         <StyledSkillContainer>
-          <StyledSkillTitle>Node.Js</StyledSkillTitle>
+          <StyledSkillTitle>Redux</StyledSkillTitle>
           <StyledSkillsText>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
+            For complex products where a variety of data and 'states' need to be
+            passed between components, I prefer to use Redux.
           </StyledSkillsText>
         </StyledSkillContainer>
       </StyledSkillsOuterContainer>

@@ -119,7 +119,7 @@ function Header(props) {
         </HashLink>
         <HashLink smooth to="/#hire-me">
           <StyledHireContainer>
-            <a>Hire Me</a>
+            <p>Hire Me</p>
           </StyledHireContainer>
         </HashLink>
       </StyledNav>

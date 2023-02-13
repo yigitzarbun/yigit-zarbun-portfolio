@@ -81,6 +81,9 @@ const StyledAboutMeContainer = styled.div`
     align-items: center;
     width: 70%;
   }
+  @media (max-width: 450px) {
+    width: 80%;
+  }
 `;
 
 const StyledProfileSubTitle = styled.h4`
@@ -106,34 +109,38 @@ function Profile() {
         <StyledProfileContainer>
           <StyledProfileSubTitle>Profile</StyledProfileSubTitle>
           <StyledTable>
-            <tr>
-              <StyledTh>Date of Birth</StyledTh>
-              <StyledTd>03 December 1993</StyledTd>
-            </tr>
-            <tr>
-              <StyledTh>Location</StyledTh>
-              <StyledTd>Istanbul</StyledTd>
-            </tr>
-            <tr>
-              <StyledTh>Education</StyledTh>
-              <StyledTd>University of Edinburgh, Int'l Business, 2016</StyledTd>
-            </tr>
-            <tr>
-              <StyledTh>Preferred Position</StyledTh>
-              <StyledTd>Frontend</StyledTd>
-            </tr>
+            <tbody>
+              <tr>
+                <StyledTh>Date of Birth</StyledTh>
+                <StyledTd>03 December 1993</StyledTd>
+              </tr>
+              <tr>
+                <StyledTh>Location</StyledTh>
+                <StyledTd>Istanbul</StyledTd>
+              </tr>
+              <tr>
+                <StyledTh>Education</StyledTh>
+                <StyledTd>
+                  University of Edinburgh, Int'l Business, 2016
+                </StyledTd>
+              </tr>
+              <tr>
+                <StyledTh>Preferred Position</StyledTh>
+                <StyledTd>Frontend</StyledTd>
+              </tr>
+            </tbody>
           </StyledTable>
         </StyledProfileContainer>
         <StyledAboutMeContainer>
           <StyledProfileSubTitle>About Me</StyledProfileSubTitle>
           <StyledProfileText>
-            After studying International Relations, International Business and
-            Energy Technologies in the United Kingdom for over 6 years and
-            working at export, business development and strategy positions, I
-            decided to embark on a new career path towards web-development. I
-            enjoy developing functional products and solving problems. I'm
-            looking for projects and teams to collaborate with on creative
-            projects.
+            After completing my undergrad and postgrad studies in the United
+            Kingdom (Int. Relations, Int. Business and Energy Systems), I
+            returned back to my hometown Istanbul and worked at export, business
+            development and strategy roles. Recently, I decided to embark on a
+            new career path towards web-development. I enjoy developing
+            functional products and solving problems. I'm looking for projects
+            and teams to collaborate with on creative projects.
           </StyledProfileText>
         </StyledAboutMeContainer>
       </StyledProfileTextsContainer>

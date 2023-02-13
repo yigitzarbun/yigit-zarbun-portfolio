@@ -23,7 +23,7 @@ const StyledLine = styled.hr`
   width: 7.9vw;
 `;
 
-const StyledNameText = styled.p`
+const StyledNameText = styled.h1`
   font-size: 1.1rem;
   font-weight: 600;
 `;
@@ -187,7 +187,7 @@ function Intro() {
               </StyledLinkContainerText>
             </StyledLinkContainer>
             <StyledLinkContainer>
-              <StyledLinkContainerImage src="./images/linkedin.png" />
+              <StyledLinkContainerImage src="./images/LinkedIn.png" />
               <StyledLinkContainerText
                 href="https://www.linkedin.com/in/yigit-zarbun-732924107/"
                 target="_blank"

@@ -2,10 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
-import { send } from "emailjs-com";
+import { lightTheme, darkTheme } from "./Themes";
 
 const StyledFooterOuterContainer = styled.div`
-  background-color: #f9f9f9;
+  background-color: ${(props) =>
+    props.theme === "dark" ? "black" : "#f9f9f9"};
   box-sizing: border-box;
   padding: 14vh 0;
   height: 150vh;
@@ -35,9 +36,8 @@ const StyledFooterInnerContainer = styled.div`
 const StyledFooterTitle = styled.h2`
   font-size: 2.625rem;
   font-weight: 600;
-  width: 60%;
+  width: 80%;
   line-height: 52.5px;
-  color: #1f2937;
   @media (max-width: 1000px) {
     width: 100%;
     margin: 0;
@@ -50,6 +50,7 @@ const StyledEmailContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 60%;
+  column-gap: 2vw;
   @media (max-width: 1000px) {
     flex-direction: column;
     row-gap: 3vh;
@@ -105,19 +106,16 @@ const StyledForm = styled.form`
 `;
 
 const StyledFormTitle = styled.h2`
-color: color: #1f2937;
-font-size: 1.5rem;
-font-weight: 600;
-@media (max-width: 1000px) {
-    text-align: center;   
+  font-size: 1.5rem;
+  font-weight: 600;
+  @media (max-width: 1000px) {
+    text-align: center;
   }
-
 `;
 
 const StyledLabel = styled.label`
   display: flex;
   flex-direction: column;
-  color: #3730a3;
   font-weight: 500;
   @media (max-width: 1000px) {
     text-align: center;
@@ -145,18 +143,20 @@ const StyledButton = styled.button`
   margin: 0 auto;
   border-radius: 6px;
   padding: 1vh 0;
-  color: #3730a3;
   font-weight: 500;
-  cursor: pointer;
   &:hover {
     background-color: #3730a3;
     color: white;
   }
+  background-color: ${(props) => (props.disabled ? "#CFD2CF" : "white")};
+  color: ${(props) => (props.disabled ? "white" : "#3730a3")};
+  border: ${(props) =>
+    props.disabled ? "1px solid white" : "1px solid #3730a3"};
+  cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
 `;
 
 function Footer(props) {
-  const { formSuccess } = props;
-
+  const { formSuccess, theme } = props;
   const {
     register,
     handleSubmit,
@@ -190,7 +190,7 @@ function Footer(props) {
     reset();
   };
   return (
-    <StyledFooterOuterContainer id="hire-me">
+    <StyledFooterOuterContainer id="hire-me" theme={theme}>
       <StyledFooterInnerContainer>
         <StyledFooterTitle>
           Let's work together on your next product
@@ -267,12 +267,7 @@ function Footer(props) {
         {errors.message && (
           <p className="formErrorMessage">{errors.message.message}</p>
         )}
-        <StyledButton
-          type="submit"
-          disabled={!isValid}
-          href="mailto:yzarbun@gmail.com"
-          target="_blank"
-        >
+        <StyledButton type="submit" disabled={!isValid}>
           Send
         </StyledButton>
       </StyledForm>

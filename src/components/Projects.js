@@ -119,16 +119,14 @@ function Projects() {
           <StyledProjectImg src="./images/fav-movies.png" />
           <StyledProjectTitle>Favourite Movies</StyledProjectTitle>
           <StyledSkillsText>
-            A simple, customizable, minimal setup cookie plugin that allows your
-            users to select which cookies to accept or decline. This was created
-            with vanilla JS, SCSS and Parcel Bundler and is available as a NPM
-            package and the git repository makes any type of customization to
-            code and themes possible.
+            A simple app that allows users to browse along a range of movies and
+            add/remove movies to their favourite movies list. This app was
+            created with React, Redux, React-Router-Dom and Tailwindcss.
           </StyledSkillsText>
           <StyledLanguagesContainer>
             <StyledLanguage>react</StyledLanguage>
             <StyledLanguage>redux</StyledLanguage>
-            <StyledLanguage>axios</StyledLanguage>
+            <StyledLanguage>tailwind</StyledLanguage>
           </StyledLanguagesContainer>
           <StyledLinkContainer>
             <StyledLink href="https://github.com/yigitzarbun/fsweb-s10g3-redux-watchlist">
@@ -146,15 +144,14 @@ function Projects() {
           <StyledProjectImg src="./images/shopping-cart.png" />
           <StyledProjectTitle>Shopping Cart</StyledProjectTitle>
           <StyledSkillsText>
-            A simple, customizable, minimal setup cookie plugin that allows your
-            users to select which cookies to accept or decline. This was created
-            with vanilla JS, SCSS and Parcel Bundler and is available as a NPM
-            package and the git repository makes any type of customization to
-            code and themes possible.
+            A shopping cart page where users may add/remove products to their
+            basket. Data is stored on the Local Storage, which prevents
+            unintended loss of data. This app was created using React and
+            Context API.
           </StyledSkillsText>
           <StyledLanguagesContainer>
             <StyledLanguage>react</StyledLanguage>
-            <StyledLanguage>redux</StyledLanguage>
+            <StyledLanguage>context api</StyledLanguage>
             <StyledLanguage>axios</StyledLanguage>
           </StyledLanguagesContainer>
           <StyledLinkContainer>
@@ -176,19 +173,20 @@ function Projects() {
           <StyledProjectImg src="./images/movie-db.png" />
           <StyledProjectTitle>IMDB Movies</StyledProjectTitle>
           <StyledSkillsText>
-            A simple, customizable, minimal setup cookie plugin that allows your
-            users to select which cookies to accept or decline. This was created
-            with vanilla JS, SCSS and Parcel Bundler and is available as a NPM
-            package and the git repository makes any type of customization to
-            code and themes possible.
+            This is a simple movie database app where users can add/remove
+            movies to their favourite movies list and add/delete movies. It was
+            created by using React, Redux and Tailwindcss. created
           </StyledSkillsText>
           <StyledLanguagesContainer>
             <StyledLanguage>react</StyledLanguage>
             <StyledLanguage>redux</StyledLanguage>
-            <StyledLanguage>axios</StyledLanguage>
+            <StyledLanguage>tailwind</StyledLanguage>
           </StyledLanguagesContainer>
           <StyledLinkContainer>
-            <StyledLink href="https://github.com/yigitzarbun/fsweb-s10g2-redux-filmler">
+            <StyledLink
+              href="https://github.com/yigitzarbun/fsweb-s10g2-redux-filmler"
+              target="_blank"
+            >
               Github
             </StyledLink>
             <StyledLink
