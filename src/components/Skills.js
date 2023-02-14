@@ -71,15 +71,16 @@ function Skills() {
         <StyledSkillContainer>
           <StyledSkillTitle>Javascript</StyledSkillTitle>
           <StyledSkillsText>
-            Having started my development journey with Javascript (JS), I build
-            most of my projects by using JS and relevant libraries.
+            Having started my development journey with vanilla Javascript (JS)
+            in 2022, I've been using JS and compatible libraries for my
+            projects.
           </StyledSkillsText>
         </StyledSkillContainer>
         <StyledSkillContainer>
           <StyledSkillTitle>React</StyledSkillTitle>
           <StyledSkillsText>
-            React has been my number one choice of library for building
-            interactive front-end products.
+            React is my number one choice of library for building interactive
+            front-end products.
           </StyledSkillsText>
         </StyledSkillContainer>
         <StyledSkillContainer>

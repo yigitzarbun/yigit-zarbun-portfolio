@@ -165,10 +165,10 @@ function Intro() {
             <StyledLine />
             <StyledNameText>Yiğit Zarbun</StyledNameText>
           </StyledNameContainer>
-          <StyledHeroTitle>Innovation-oriented developer </StyledHeroTitle>
+          <StyledHeroTitle>Business-oriented web developer </StyledHeroTitle>
           <StyledHeroTexts>
             Hi, I’m Yigit, a full-stack developer. If you are looking for a
-            Developer to craft solid and scalable frontend products check out
+            Developer to craft solid and scalable frontend products, check out
             some of my work and feel free to get in touch with me.
           </StyledHeroTexts>
           <StyledLinkOuterContainer>

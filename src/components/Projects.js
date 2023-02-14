@@ -81,6 +81,7 @@ const StyledSkillsText = styled.p`
 const StyledLanguagesContainer = styled.div`
   display: flex;
   column-gap: 0.5vw;
+  color: ${(props) => props.theme === "light" && "#4338CA"};
   @media (max-width: 1000px) {
     column-gap: 2vw;
   }
@@ -97,6 +98,7 @@ const StyledLanguage = styled.p`
 const StyledLinkContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  color: ${(props) => props.theme === "light" && "#4338CA"};
   @media (max-width: 1000px) {
     column-gap: 5vw;
   }
@@ -110,7 +112,8 @@ const StyledLink = styled.a`
   line-height: 1rem;
 `;
 
-function Projects() {
+function Projects(props) {
+  const { theme } = props;
   return (
     <StyledProjectsContainer id="projects">
       <StyledProjectsTitle>Projects</StyledProjectsTitle>
@@ -123,13 +126,16 @@ function Projects() {
             add/remove movies to their favourite movies list. This app was
             created with React, Redux, React-Router-Dom and Tailwindcss.
           </StyledSkillsText>
-          <StyledLanguagesContainer>
+          <StyledLanguagesContainer theme={theme}>
             <StyledLanguage>react</StyledLanguage>
             <StyledLanguage>redux</StyledLanguage>
             <StyledLanguage>tailwind</StyledLanguage>
           </StyledLanguagesContainer>
-          <StyledLinkContainer>
-            <StyledLink href="https://github.com/yigitzarbun/fsweb-s10g3-redux-watchlist">
+          <StyledLinkContainer theme={theme}>
+            <StyledLink
+              href="https://github.com/yigitzarbun/fsweb-s10g3-redux-watchlist"
+              target="_blank"
+            >
               Github
             </StyledLink>
             <StyledLink
@@ -146,15 +152,15 @@ function Projects() {
           <StyledSkillsText>
             A shopping cart page where users may add/remove products to their
             basket. Data is stored on the Local Storage, which prevents
-            unintended loss of data. This app was created using React and
+            unintended loss of changes. This app was created using React and
             Context API.
           </StyledSkillsText>
-          <StyledLanguagesContainer>
+          <StyledLanguagesContainer theme={theme}>
             <StyledLanguage>react</StyledLanguage>
             <StyledLanguage>context api</StyledLanguage>
-            <StyledLanguage>axios</StyledLanguage>
+            <StyledLanguage>styled comp.</StyledLanguage>
           </StyledLanguagesContainer>
-          <StyledLinkContainer>
+          <StyledLinkContainer theme={theme}>
             <StyledLink
               href="https://github.com/yigitzarbun/fsweb-s11g1-shopping-cart"
               target="_blank"
@@ -177,12 +183,12 @@ function Projects() {
             movies to their favourite movies list and add/delete movies. It was
             created by using React, Redux and Tailwindcss. created
           </StyledSkillsText>
-          <StyledLanguagesContainer>
+          <StyledLanguagesContainer theme={theme}>
             <StyledLanguage>react</StyledLanguage>
             <StyledLanguage>redux</StyledLanguage>
             <StyledLanguage>tailwind</StyledLanguage>
           </StyledLanguagesContainer>
-          <StyledLinkContainer>
+          <StyledLinkContainer theme={theme}>
             <StyledLink
               href="https://github.com/yigitzarbun/fsweb-s10g2-redux-filmler"
               target="_blank"

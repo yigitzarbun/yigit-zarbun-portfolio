@@ -111,8 +111,8 @@ function Profile() {
           <StyledTable>
             <tbody>
               <tr>
-                <StyledTh>Date of Birth</StyledTh>
-                <StyledTd>03 December 1993</StyledTd>
+                <StyledTh>Year of Birth</StyledTh>
+                <StyledTd>1993</StyledTd>
               </tr>
               <tr>
                 <StyledTh>Location</StyledTh>
@@ -134,13 +134,15 @@ function Profile() {
         <StyledAboutMeContainer>
           <StyledProfileSubTitle>About Me</StyledProfileSubTitle>
           <StyledProfileText>
-            After completing my undergrad and postgrad studies in the United
-            Kingdom (Int. Relations, Int. Business and Energy Systems), I
-            returned back to my hometown Istanbul and worked at export, business
-            development and strategy roles. Recently, I decided to embark on a
-            new career path towards web-development. I enjoy developing
-            functional products and solving problems. I'm looking for projects
-            and teams to collaborate with on creative projects.
+            After completing my BA in Int. Relations and MSc in International
+            Business in London and Edinburgh, respectively, I returned back to
+            my hometown Istanbul in 2018 and obtained my second MSc in Energy
+            Technologies and then worked at export, business development and
+            strategy roles for 5 years at some of the largest coroporations of
+            Turkey. Recently, I decided to embark on a new career path towards
+            web-development, which I hope will create new opportunities for me
+            to craft innovative products that make life easier for individuals
+            and businesses.
           </StyledProfileText>
         </StyledAboutMeContainer>
       </StyledProfileTextsContainer>

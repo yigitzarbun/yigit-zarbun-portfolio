@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ThemeProvider } from "styled-components";
@@ -14,14 +14,28 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(getTheme());
+
+  function getTheme() {
+    const theme = localStorage.getItem("theme");
+    return theme ? theme : "light";
+  }
+
+  function themeProvider() {
+    localStorage.setItem("theme", theme);
+  }
   const handleDarkmode = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
   };
+
   const formSuccess = () => {
     toast("Thank you for your message!");
   };
 
+  useEffect(() => {
+    themeProvider();
+    getTheme();
+  }, [theme]);
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
@@ -30,7 +44,7 @@ function App() {
       <Intro />
       <Skills />
       <Profile />
-      <Projects />
+      <Projects theme={theme} />
       <Footer formSuccess={formSuccess} theme={theme} />
     </ThemeProvider>
   );
