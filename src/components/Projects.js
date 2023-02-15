@@ -150,10 +150,9 @@ function Projects(props) {
           <StyledProjectImg src="./images/shopping-cart.png" />
           <StyledProjectTitle>Shopping Cart</StyledProjectTitle>
           <StyledSkillsText>
-            A shopping cart page where users may add/remove products to their
-            basket. Data is stored on the Local Storage, which prevents
-            unintended loss of changes. This app was created using React and
-            Context API.
+            A shopping cart created using React and Context API where users may
+            add/remove products to their basket. Data is stored on the Local
+            Storage, which prevents unintended loss of changes.
           </StyledSkillsText>
           <StyledLanguagesContainer theme={theme}>
             <StyledLanguage>react</StyledLanguage>
