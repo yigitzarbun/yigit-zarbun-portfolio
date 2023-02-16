@@ -16,25 +16,13 @@ const StyledHeaderContainer = styled.div`
   }
 `;
 const StyledLogoContainer = styled.div`
-  background-color: #eeebff;
   color: #7b61ff;
-  height: 9.8vh;
-  width: 63.67567443847656px;
-  left: 125px;
-  top: 87px;
-  border-radius: 0px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transform: rotate(24deg);
   font-weight: bold;
   font-size: 1.5rem;
-  &:hover {
-    background-color: #7b61ff;
-    color: #eeebff;
-    transform: rotate(-24deg);
-  }
+  align-items: center;
+  display: flex;
+
   @media (max-width: 920px) {
     border-radius: 5px;
     width: 10vw;

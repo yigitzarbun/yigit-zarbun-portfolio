@@ -13,3 +13,7 @@
   font-size: 0.75rem;
   font-family: "Inter", sans-serif;
 }
+
+body {
+  margin: 0 auto;
+}

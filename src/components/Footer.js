@@ -9,7 +9,7 @@ const StyledFooterOuterContainer = styled.div`
     props.theme === "dark" ? "black" : "#f9f9f9"};
   box-sizing: border-box;
   padding: 14vh 0;
-  height: 150vh;
+
   display: flex;
   align-items: start;
   @media (max-width: 1000px) {
