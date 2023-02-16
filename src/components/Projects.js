@@ -133,7 +133,7 @@ function Projects(props) {
           </StyledLanguagesContainer>
           <StyledLinkContainer theme={theme}>
             <StyledLink
-              href="https://github.com/yigitzarbun/fsweb-s10g3-redux-watchlist"
+              href="https://fsweb-s10g3-redux-watchlist-olive.vercel.app/"
               target="_blank"
             >
               Github
