@@ -102,7 +102,9 @@ function Project(props) {
   const { theme, project } = props;
   return (
     <StyledProjectContainer>
-      <StyledProjectImg src={project.img} />
+      <a href={project.site} target="_blank">
+        <StyledProjectImg src={project.img} />
+      </a>
       <StyledProjectTitle>{project.title}</StyledProjectTitle>
       <StyledSkillsText>{project.description}</StyledSkillsText>
       <StyledDetailsContainer>

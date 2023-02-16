@@ -29,10 +29,6 @@ const StyledLogoContainer = styled.div`
     height: 10vh;
     transform: none;
   }
-  @media (max-width: 450px) {
-    width: 15vw;
-    height: 8vh;
-  }
 `;
 
 const StyledDarkIcon = styled.img`
