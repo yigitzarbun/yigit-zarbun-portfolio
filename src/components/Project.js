@@ -5,7 +5,7 @@ const StyledProjectContainer = styled.div`
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
-  width: 28%;
+  width: 45%;
 
   @media (max-width: 1000px) {
     width: 70%;
@@ -31,8 +31,9 @@ const StyledProjectContainer = styled.div`
   }
 `;
 
-const StyledProjectImg = styled.img`
+const StyledProjectVideo = styled.video`
   width: 100%;
+  height: 100%;
   border-radius: 18px;
   box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
     0px 18px 88px -4px rgba(24, 39, 75, 0.14);
@@ -41,16 +42,25 @@ const StyledProjectTitle = styled.h4`
   font-size: 1.87rem;
   font-weight: 500;
   line-height: 28px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  @media (max-width: 850px) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 `;
 
 const StyledSkillsText = styled.p`
   font-weight: 400;
   font-size: 1rem;
   line-height: 150%;
+  margin-bottom: 2vh;
   @media (max-width: 1000px) {
     font-size: 1rem;
     line-height: 1.5rem;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   @media (max-width: 450px) {
     width: 70%;
@@ -103,7 +113,10 @@ function Project(props) {
   return (
     <StyledProjectContainer>
       <a href={project.site} target="_blank">
-        <StyledProjectImg src={project.img} />
+        <StyledProjectVideo controls autoPlay muted playsinline>
+          <source src={project.src} type="video/webm" />
+          Your browser doesn not support the video tag.
+        </StyledProjectVideo>
       </a>
       <StyledProjectTitle>{project.title}</StyledProjectTitle>
       <StyledSkillsText>{project.description}</StyledSkillsText>

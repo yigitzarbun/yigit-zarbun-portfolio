@@ -29,6 +29,9 @@ const StyledLogoContainer = styled.div`
     height: 10vh;
     transform: none;
   }
+  @media (max-width: 450px) {
+    display: none;
+  }
 `;
 
 const StyledDarkIcon = styled.img`
@@ -94,6 +97,9 @@ function Header(props) {
       </StyledLogoContainer>
       <StyledNav>
         <StyledDarkIcon src="./images/moon.png" onClick={handleDarkmode} />
+        <a href="/files/cv.pdf" target="_blank">
+          CV
+        </a>
         <HashLink smooth to="/#skills">
           {" "}
           <StyledNavLink>Skills</StyledNavLink>

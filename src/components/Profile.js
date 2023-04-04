@@ -136,13 +136,13 @@ function Profile() {
           <StyledProfileText>
             After completing my BA in Int. Relations and MSc in International
             Business in London and Edinburgh, respectively, I returned back to
-            my hometown Istanbul in 2018 and obtained my second MSc in Energy
-            Technologies and then worked at export, business development and
-            strategy roles for 5 years at some of the largest coroporations of
-            Turkey. Recently, I decided to embark on a new career path towards
-            web-development, which I hope will create new opportunities for me
-            to craft innovative products that make life easier for individuals
-            and businesses.
+            my hometown Istanbul in 2018 and obtained my second MSc degree in
+            Energy Technologies.Then, I worked at export, business development
+            and strategy roles for 5 years at some of the largest coroporations
+            in Turkey. Recently, I decided to embark on a new career path
+            towards web-development, which I hope will create new opportunities
+            for me to craft innovative products that make life easier for
+            individuals and businesses.
           </StyledProfileText>
         </StyledAboutMeContainer>
       </StyledProfileTextsContainer>

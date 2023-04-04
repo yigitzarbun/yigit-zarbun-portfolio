@@ -62,7 +62,7 @@ const StyledHeroTitle = styled.h2`
   line-height: 72px;
   word-break: break-word;
   @media (max-width: 450px) {
-    font-size: 3.2rem;
+    font-size: 2.7rem;
     line-height: 60px;
   }
 `;
@@ -165,7 +165,9 @@ function Intro() {
             <StyledLine />
             <StyledNameText>Yiğit Zarbun</StyledNameText>
           </StyledNameContainer>
-          <StyledHeroTitle>Business-oriented web developer </StyledHeroTitle>
+          <StyledHeroTitle>
+            Full-stack developer, business background
+          </StyledHeroTitle>
           <StyledHeroTexts>
             Hi, I’m Yigit, a full-stack developer. If you are looking for a
             Developer to craft solid and scalable frontend products, check out

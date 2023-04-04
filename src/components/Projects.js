@@ -29,9 +29,10 @@ const StyledProjectsOuterContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   column-gap: 5vw;
+  row-gap: 10vh;
   justify-content: space-between;
   align-items: flex-start;
-  height: 80vh;
+  height: 100%;
   @media (max-width: 1000px) {
     flex-direction: column;
     align-items: center;
